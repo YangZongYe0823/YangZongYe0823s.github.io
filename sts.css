@@ -126,13 +126,13 @@ body {
 }
 
 .hometext3{
-    font-size: 28px; /* 設置字體大小 */
+    font-size: 60px; /* 設置字體大小 */
     border: 2px solid #bd2525; /* 設置邊框 */
 
     display: flex; /* 使用彈性盒子布局 */
     align-items: flex-start; /* 垂直靠上對齊 */
     justify-content: center; /* 水平居中對齊 */
-    padding: 150px; /* 設置內邊距 */
+    
 }
 
 .link {
