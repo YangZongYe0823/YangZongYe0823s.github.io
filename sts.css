@@ -1,0 +1,177 @@
+*{
+    margin: 0; /* 清除預設邊距 */
+    padding: 0; /* 清除預設內邊距 */
+}
+
+h1{
+    /* width: 200px;  */
+    border: 0px solid rgb(229, 197, 16); /* 設置標題邊框 */
+    padding: 10px; /* 設置標題內邊距 */
+
+    position: absolute; /* 設置絕對定位 */
+    top:-7px; /* 設置元素頂部位置 */
+    left:70px; /* 設置元素左側位置 */
+}
+
+h1 a {
+    color: #65e4fb; /* 設置標題文本顏色 */
+    text-decoration: none; /* 移除文本下劃線 */
+    font-size: 20px; /* 設置標題字體大小 */
+}
+
+h4{
+    position: absolute; /* 設置絕對定位 */
+    top:-1px; /* 設置元素頂部位置 */
+    left:1250px; /* 設置元素左側位置 */
+}
+
+h5{
+    position: absolute; /* 設置絕對定位 */
+    top:3px; /* 設置元素頂部位置 */
+    left:1350px; /* 設置元素左側位置 */
+}
+
+h6{
+    position: absolute; /* 設置絕對定位 */
+    top:3px; /* 設置元素頂部位置 */
+    left:1430px; /* 設置元素左側位置 */
+}
+
+nav{
+    background-color: black; /* 設置導航背景顏色 */
+    text-align: center; /* 文本居中對齊 */
+}
+
+nav a{
+    color: aliceblue; /* 設置導航文本顏色 */
+    text-decoration: none; /* 移除文本下劃線 */
+    display: inline-block; /* 設置文本以行內塊方式顯示 */
+    padding: 8px 100px; /* 設置導航文本的內邊距 */
+    font-size: 30px; /* 設置導航字體大小 */
+    transition: 0.6s; /* 添加漸變效果的過渡時間 */
+}
+
+nav a:hover{
+    background-color: rgb(8, 12, 255); /* 滑鼠懸停時的背景顏色 */
+}
+
+nav a.current {
+    font-weight: bold; /* 粗體 */
+    background-color: rgb(255, 8, 160);
+}
+
+nav a.current::before {
+    content: '\10385 '; /* 箭頭符號 */
+    font-weight: bold;
+    margin-right: 10px; /* 箭頭與文本距離 */
+}
+
+.me:hover::before{
+    position: absolute; /* 設置絕對定位 */
+    top: 60px; /* 設置元素頂部位置 */
+    left:150px; /* 設置元素左側位置 */
+    color: aliceblue; /* 設置文本顏色 */
+    font-size: 18px; /* 設置文本字體大小 */
+    background: rgb(0, 0, 0); /* 設置背景顏色 */
+    content: "前面的區域以後再來探索吧"; /* 設置元素內容 */
+    padding: 12px; /* 設置內邊距 */
+    height: 300px;
+    text-align: center; /* 将文本内容置中 */
+    line-height: 300px;
+}
+
+body {
+    background-image: url('185815_0.jpg'); /* 設置背景圖片 */
+    background-size: cover; /* 調整背景圖片大小以填滿視窗 */
+    background-repeat: no-repeat; /* 防止背景圖片重複 */
+    background-attachment: fixed; /* 固定背景圖片 */
+    background-color: rgba(255, 197, 197, 0.5); /* 背景圖片之上的淡色背景顏色 */
+}
+
+.hometext{
+    font-size: 22px; /* 設置字體大小 */
+    border: 0px solid #bd2525; /* 設置邊框 */
+    width: 100px; /* 設置寬度 */
+    height: 200px; /* 設置高度 */
+    display: flex; /* 使用彈性盒子布局 */
+    justify-content: left; /* 內容靠左對齊 */
+    align-items: center; /* 垂直居中對齊 */
+    padding: 150px; /* 設置內邊距 */
+    float: left; /* 浮動到左側 */
+    text-align:center; /* 文本居中對齊 */
+}
+
+.hometext1{
+    font-size: 22px; /* 設置字體大小 */
+    border: 0px solid #bd2525; /* 設置邊框 */
+    width: 450px; /* 設定寬度為450像素 */
+    height: 200px; /* 設定高度為200像素 */
+
+    display: flex; /* 使用彈性盒子布局 */
+    align-items: center; /* 垂直居中對齊 */
+    padding: 150px; /* 設置內邊距 */
+    text-align: justify;
+}
+
+.hometext2{
+    font-size: 28px; /* 設置字體大小 */
+    border: 0px solid #bd2525; /* 設置邊框 */
+    width: 600px; /* 設定寬度為800像素 */
+    height: 100px; /* 設定高度為200像素 */
+
+    display: flex; /* 使用彈性盒子布局 */
+    align-items: center; /* 垂直居中對齊 */
+    justify-content: center; /* 水平居中對齊 */
+    padding: 150px; /* 設置內邊距 */
+}
+
+.hometext3{
+    font-size: 28px; /* 設置字體大小 */
+    border: 2px solid #bd2525; /* 設置邊框 */
+
+    display: flex; /* 使用彈性盒子布局 */
+    align-items: flex-start; /* 垂直靠上對齊 */
+    justify-content: center; /* 水平居中對齊 */
+    padding: 150px; /* 設置內邊距 */
+}
+
+.link {
+    margin-right: 20px; /* 設定水平間距為20像素*/
+}
+
+.box{
+    font-family: "明瞭體"; /* 設置字體為Arial或者sans-serif（如果無法顯示Arial，則使用瀏覽器的sans-serif字體替代） */
+    position: relative; /* 設置相對定位 */
+    left: 13%; /* 從左側偏移位置 */
+    float: left; /* 浮動到左側 */
+    background-color: rgba(251, 251, 216, 0.6); /* 使用 RGBA 表示法設置背景顏色並調整透明度 */
+    line-height: 2; /* 設置行高 */
+    height: 600px; /* 設定高度為600像素 */
+    
+}
+
+.box a{
+    text-decoration: none; /* 移除文本下劃線 */
+    color: #a10efd; /* 設置文本顏色 */
+}
+
+.box1{
+    font-family: "明瞭體"; /* 設置字體為Arial或者sans-serif（如果無法顯示Arial，則使用瀏覽器的sans-serif字體替代） */
+    position: relative; /* 設置相對定位 */
+    left: 13%; /* 從左側偏移位置 */
+    float: left; /* 浮動到左側 */
+    background-color: rgba(251, 251, 216, 0.6); /* 使用 RGBA 表示法設置背景顏色並調整透明度 */
+    line-height: 2; /* 設置行高 */
+    height: 800px; /* 設定高度為800像素 */
+    width: 1100px;
+}
+
+.box1 a{
+    text-decoration: none; /* 移除文本下劃線 */
+    color: #a10efd; /* 設置文本顏色 */
+}
+
+.hometext1 a{
+    text-decoration: none; /* 移除文本下劃線 */
+    color: #2d15ff; /* 設置文本顏色 */
+}
